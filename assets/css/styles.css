@@ -442,7 +442,9 @@ nav {
     display: block;
     margin-bottom: 5px;
 }
-
+.rsvp-form select, {
+    width: 50%;
+}
 .rsvp-form input,
 .rsvp-form select,
 .rsvp-form button,
