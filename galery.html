@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Kuro Gallery</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/icon/logo.png" alt="Kuro Logo">
+            </div>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#galeryform">Kuro Printing</a></li>
+                <li><a href="#portfolioGalery">Kuro Project</a></li>
+                <li><a href="galery.html">Galery</a></li>
+                <li><a href="#rsvp">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero-section">
+        <div class="background-image" style="background-image: url('img/bglb.jpg')"></div>
+        <div class="hero-content">
+            <h1>KURO DEVA MAHAKA</h1>
+            <p id="current-date"></p>
+            <p id="current-time"><i class="far fa-clock"></i></p>
+            <a href="#galeryform" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="buttons-section" id="btnUp">
+        <div class="buttons-container">
+            <a href="index.html" class="btn"><i class="fas fa-home"></i></a>
+            <a href="galery.html" class="btn"><i class="fas fa-images"></i></a>
+            <a href="#rsvp" class="btn"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <div class="container-form" id="galeryform">
+        <h1>Gallery</h1>
+        <div class="gallery-form" data-aos="fade-up">
+            <!-- Ganti URL gambar dengan URL gambar yang sesuai -->
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img1.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img1.jpg" alt="Image 1" data-aos="fade-up-left">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img2.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img2.jpg" alt="Image 2" data-aos="fade-up-right">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img3.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img3.jpg" alt="Image 3" data-aos="fade-down-right">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img4.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img4.jpg" alt="Image 4" data-aos="fade-up-left">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img5.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img5.jpg" alt="Image 5" data-aos="fade-up-right">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img6.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img6.jpg" alt="Image 6" data-aos="fade-down-right">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img7.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img7.jpg" alt="Image 7" data-aos="fade-up-left">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img8.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img8.jpg" alt="Image 8" data-aos="fade-up-right">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img9.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img9.jpg" alt="Image 9" data-aos="fade-down-right">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img10.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img10.jpg" alt="Image 10" data-aos="fade-up-left">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img11.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img11.jpg" alt="Image 11" data-aos="fade-up-right">
+            </div>
+            <div class="gallery-item-form" onclick="openModal('img/kuroprinting/img12.jpg', 'Lorem, ipsum Judul.')">
+                <img src="img/kuroprinting/img12.jpg" alt="Image 12" data-aos="fade-down-right">
+            </div>
+            <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+        </div>
+    </div>
+<!--
+    <section class="portfolio-section" id="portfolioGalery" data-aos="fade-up">
+        <h2 data-aos="fade-up">Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item left">
+                <img src="img/kuroproject/img1.jpg" alt="Portfolio 1" data-aos="fade-up">
+                <div class="overlay">
+                    <img src="img/kuroproject/img1.jpg" alt="img overlay">
+                    <h3>Portfolio</h3>
+                    <p>Lorem ipsum Judul. Unde, libero?</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item right">
+                <img src="img/kuroproject/img2.jpg" alt="Portfolio 2">
+                <div class="overlay">
+                    <h3>Portfolio 2</h3>
+                    <p>Lorem ipsum Judul. Unde, libero?</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    -->
+
+    <section id="rsvp" class="rsvp-section" data-aos="fade-up">
+        <h2>Pesan Sekarang</h2>
+        <form id="rsvp-form" class="rsvp-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <label for="attendance">DP:</label>
+            <select id="attendance" name="attendance" autocomplete="off">
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            <label for="message">Pesan Tambahan:</label>
+            <textarea id="message" name="message" rows="4" autocomplete="off" required></textarea>
+            <button type="submit" class="btn">Kirim</button>
+        </form>
+    </section>
+
+        <!-- payments -->
+        <section class="payments-section" id="payments">
+            <h2>Metode Pembayaran:</h2>
+            <div class="payments-container">
+                <img src="assets/icon/payments.png" alt="payments">
+            </div>
+        </section>
+
+    <!-- Floating section -->
+    <div class="floating-section">
+        <button class="floating-button  animate__animated animate__fadeInUp" id="floatingBtn" aria-label="Add"><i class="fas fa-plus"></i></button>
+        <div class="floating-icons animate__animated animate__fadeInUp">
+            <a href="https://wa.me/6282321159657" target="_blank" class="floating-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/people/Kuro-Printing/61559610310673/?mibextid=ZbWKwL" target="_blank" class="floating-icon facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kuro_printing/?igsh=MXNxbnkweWFwMTd0bQ%3D%3D" target="_blank" class="floating-icon instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">UndanganKu</div>
+                <div class="social-icons">
+                    <p class="social-title"></p>
+                    <a href="https://www.facebook.com/people/Kuro-Printing/61559610310673/?mibextid=ZbWKwL" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/6282321159657" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/kuro_printing/?igsh=MXNxbnkweWFwMTd0bQ%3D%3D" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p class="footer-Copyright">&copy; 2024 Kuro Deva Mahaka. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content animate__animated animate__zoomIn" id="modalImage" alt="Description of the image" title="Tooltip text for the image">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
