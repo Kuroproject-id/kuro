@@ -138,23 +138,24 @@ document.addEventListener('DOMContentLoaded', function() {
             window.open(whatsappUrl, '_blank');
         });
     }
-
-    // Floating button and icons
-    const floatingBtn = document.getElementById('floatingBtn');
-    const floatingIcons = document.querySelector('.floating-icons');
-
-    if (floatingBtn && floatingIcons) {
-        floatingBtn.addEventListener('click', function() {
-            floatingIcons.classList.toggle('show');
-        });
-    }
 });
 
 // FLOATING ANIMASI
-function toggleFloatingIcons() {
-    var floatingIcons = document.getElementById("floatingIcons");
-    floatingIcons.classList.toggle("show");
-}
+document.getElementById('floating-btn').addEventListener('click', function() {
+    const icons = document.getElementById('floatingIcons');
+    if (icons.style.display === 'none' || icons.style.display === '') {
+        icons.classList.remove('animate__fadeOutRight');
+        icons.classList.add('animate__fadeInRight');
+        icons.style.display = 'flex';
+    } else {
+        icons.classList.remove('animate__fadeInRight');
+        icons.classList.add('animate__fadeOutRight');
+        setTimeout(() => {
+            icons.style.display = 'none';
+        }, 1000); // Durasi animasi fade out
+    }
+});
+
 
 // waktu
 function updateTime() {
