@@ -94,7 +94,7 @@ function sendOrderToWhatsApp(event) {
     console.log("Description:", description);
 
     // Encode the message for WhatsApp
-    var message = `Halo, saya ingin memesan project baru.\n\nNama: ${name}\nEmail: ${email}\nTipe Project: ${projectType}\nDeskripsi Project: ${description}`;
+    var message = `Halo, saya ingin memesan project baru.\n\nTipe Project: ${projectType}\nDeskripsi Project: ${description}`;
     var encodedMessage = encodeURIComponent(message);
 
     // WhatsApp URL
