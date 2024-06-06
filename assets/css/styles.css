@@ -497,61 +497,51 @@ nav {
     height: auto;
 }
 
-.floating-icons {
-    display: none;
-}
-
-.floating-button {
+/* Floating */
+.floating-section {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
-    background-color: #fff;
-    color: #333;
+}
+
+.floating-btn {
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.floating-button:hover {
-    background-color: #fff;
-}
-
-.floating-icons.show {
-    display: flex;
+.floating-icons {
+    display: none;
     flex-direction: column;
     gap: 10px;
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    z-index: 999;
+    margin-bottom: 10px;
 }
 
 .floating-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    color: #007bff;
+    text-decoration: none;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.floating-icon:hover {
-    background-color: #e6e6e6;
-    color: #333;
-}
+.floating-icon.whatsapp { color: #25d366; }
+.floating-icon.facebook { color: #3b5998; }
+.floating-icon.instagram { color: #e4405f; }
+
 
 /* Footer */
 footer {
