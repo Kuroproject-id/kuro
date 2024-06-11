@@ -28,12 +28,15 @@
         });
 
         // Modal handling
-        function openModal(imageUrl) {
-                var modal = document.getElementById('myModal');
-                var modalImg = document.getElementById("modalImage");
-                modal.style.display = "block";
-                modalImg.src = imageUrl;
-
+        function openModal(imageUrl, caption) {
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("modalImage");
+            var captionText = document.getElementById("captionText");
+            modal.style.display = "block";
+            modalImg.src = imageUrl;
+            captionText.innerHTML = caption;
+        }
+        
         function closeModal() {
             var modal = document.getElementById('myModal');
             modal.style.display = "none";
