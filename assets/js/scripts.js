@@ -28,13 +28,11 @@
         });
 
         // Modal handling
-        function openModal(imageUrl, caption) {
+        function openModal(imageUrl) {
                 var modal = document.getElementById('myModal');
                 var modalImg = document.getElementById("modalImage");
-                var modalCaption = document.getElementById("caption");
                 modal.style.display = "block";
                 modalImg.src = imageUrl;
-                modalCaption.innerHTML = caption;
 
         function closeModal() {
             var modal = document.getElementById('myModal');
