@@ -31,10 +31,8 @@
         function openModal(imageUrl, caption) {
             var modal = document.getElementById('myModal');
             var modalImg = document.getElementById("modalImage");
-            var captionText = document.getElementById("caption");
             modal.style.display = "block";
             modalImg.src = imageUrl;
-            captionText.innerHTML = caption;
         }
 
         function closeModal() {
